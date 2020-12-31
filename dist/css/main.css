@@ -1,0 +1,882 @@
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/**
+ * @section Base Styles
+ */
+/* line 7, src/sass/components/_base.scss */
+body {
+  margin: 1em  auto;
+  max-width: 1024px;
+}
+
+/* line 16, src/sass/components/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, src/sass/components/_base.scss */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* line 25, src/sass/components/_base.scss */
+.content a img {
+  margin-left: 0.7em;
+}
+
+/* line 31, src/sass/components/_base.scss */
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6FAFD), color-stop(19.4%, #FFFFFF));
+  background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+/* line 36, src/sass/components/_base.scss */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em;
+}
+
+/* line 47, src/sass/components/_base.scss */
+.logo-wrapper {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 1em;
+}
+
+/* line 55, src/sass/components/_base.scss */
+.shape1 {
+  background: #9C69E2;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* line 63, src/sass/components/_base.scss */
+.shape2 {
+  background: #F063B8;
+  width: 20px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+/* line 71, src/sass/components/_base.scss */
+.header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* line 76, src/sass/components/_base.scss */
+.header a {
+  margin-right: 2em;
+  text-decoration: none;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+
+/* line 87, src/sass/components/_base.scss */
+.header a:hover {
+  color: #212353;
+  font-weight: 800;
+}
+
+/* line 91, src/sass/components/_base.scss */
+.header .demo-btn {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 0.5em;
+}
+
+/* line 98, src/sass/components/_base.scss */
+.header .demo-btn a {
+  margin: 0 auto;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 103, src/sass/components/_base.scss */
+.header .demo-btn a img {
+  margin-left: 0.7em;
+}
+
+/* line 111, src/sass/components/_base.scss */
+.call-to-action {
+  background-image: url("../image11.png");
+  background-position: -64px 11px;
+  background-size: cover;
+  display: inline-block;
+  padding: 1em;
+  background-repeat: no-repeat;
+  margin-top: 3em;
+}
+
+/* line 119, src/sass/components/_base.scss */
+.call-to-action .content {
+  width: 72%;
+}
+
+/* line 122, src/sass/components/_base.scss */
+.call-to-action .content h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+/* line 135, src/sass/components/_base.scss */
+.call-to-action .content p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+
+/* line 147, src/sass/components/_base.scss */
+.call-to-action button {
+  background: #9C69E2;
+  border-radius: 50px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-block;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  padding: 01em;
+  width: 154px;
+  text-align: center;
+}
+
+/* line 171, src/sass/components/_base.scss */
+.call-to-action-2 {
+  background: rgba(240, 99, 184, 0.15);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  margin-top: 2em;
+}
+
+/* line 176, src/sass/components/_base.scss */
+.call-to-action-2 img {
+  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 182, src/sass/components/_base.scss */
+.call-to-action-2 div {
+  padding: 1em;
+}
+
+/* line 185, src/sass/components/_base.scss */
+.call-to-action-2 h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 130%;
+  /* or 52px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+/* line 197, src/sass/components/_base.scss */
+.call-to-action-2 p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+
+/* line 207, src/sass/components/_base.scss */
+.features-section {
+  margin-top: 2em;
+  padding: 1em;
+}
+
+/* line 210, src/sass/components/_base.scss */
+.features-section h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #212353;
+  text-align: center;
+}
+
+/* line 219, src/sass/components/_base.scss */
+.features-section p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #4B5D68;
+}
+
+/* line 229, src/sass/components/_base.scss */
+.features-section .features .feature-1 {
+  background-image: url("../01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  padding: 1em;
+  max-width: 24em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* line 238, src/sass/components/_base.scss */
+.features-section .features .feature-1 .content {
+  margin-left: 0em;
+}
+
+/* line 240, src/sass/components/_base.scss */
+.features-section .features .feature-1 .content h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #212353;
+}
+
+/* line 250, src/sass/components/_base.scss */
+.features-section .features .feature-1 .content p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  text-align: left;
+}
+
+/* line 259, src/sass/components/_base.scss */
+.features-section .features .feature-1 .content a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+  text-align: left;
+}
+
+/* line 274, src/sass/components/_base.scss */
+.features-section .features .feature-2 {
+  background-image: url("../2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  padding: 1em;
+  max-width: 24em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* line 283, src/sass/components/_base.scss */
+.features-section .features .feature-2 .content {
+  margin-left: 0em;
+}
+
+/* line 286, src/sass/components/_base.scss */
+.features-section .features .feature-2 .content h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #212353;
+}
+
+/* line 294, src/sass/components/_base.scss */
+.features-section .features .feature-2 .content p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  text-align: left;
+}
+
+/* line 303, src/sass/components/_base.scss */
+.features-section .features .feature-2 .content a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+  text-align: left;
+}
+
+/* line 318, src/sass/components/_base.scss */
+.features-section .features .feature-3 {
+  background-image: url("../3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  padding: 1em;
+  max-width: 24em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* line 327, src/sass/components/_base.scss */
+.features-section .features .feature-3 .content {
+  margin-left: 0em;
+}
+
+/* line 330, src/sass/components/_base.scss */
+.features-section .features .feature-3 .content h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #212353;
+}
+
+/* line 338, src/sass/components/_base.scss */
+.features-section .features .feature-3 .content p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  text-align: left;
+}
+
+/* line 347, src/sass/components/_base.scss */
+.features-section .features .feature-3 .content a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+  text-align: left;
+}
+
+/* line 361, src/sass/components/_base.scss */
+.features-section .features .feature-4 {
+  background-image: url("../4.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  padding: 1em;
+  max-width: 24em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* line 370, src/sass/components/_base.scss */
+.features-section .features .feature-4 .content {
+  margin-left: 0em;
+}
+
+/* line 373, src/sass/components/_base.scss */
+.features-section .features .feature-4 .content h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #212353;
+}
+
+/* line 383, src/sass/components/_base.scss */
+.features-section .features .feature-4 .content p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  text-align: left;
+}
+
+/* line 392, src/sass/components/_base.scss */
+.features-section .features .feature-4 .content a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+  text-align: left;
+}
+
+/* line 409, src/sass/components/_base.scss */
+.testimonials {
+  margin: 1em;
+  background: #9d69e2;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 415, src/sass/components/_base.scss */
+.testimonials h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding-top: 2em;
+  padding-left: 1.5em;
+}
+
+/* line 425, src/sass/components/_base.scss */
+.testimonials .profile-pic {
+  background-image: url("../profile.png");
+  background-size: contain;
+  width: 4em;
+  height: 4em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+/* line 434, src/sass/components/_base.scss */
+.testimonials .card {
+  background: white;
+  margin: 1em;
+  border-radius: 20px;
+  padding: 0.9em;
+  -webkit-box-shadow: 0px 20px 0px #3e2c2c5c;
+          box-shadow: 0px 20px 0px #3e2c2c5c;
+}
+
+/* line 441, src/sass/components/_base.scss */
+.testimonials .profile-info {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+/* line 444, src/sass/components/_base.scss */
+.testimonials .profile-info .name {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
+  letter-spacing: 0.005em;
+  /* 2 */
+  color: #212353;
+}
+
+/* line 461, src/sass/components/_base.scss */
+.testimonials .profile-info .detail {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.01em;
+  /* 3 */
+  color: #9C69E2;
+}
+
+/* line 480, src/sass/components/_base.scss */
+.dot-wrapper {
+  padding: 2em;
+}
+
+/* line 484, src/sass/components/_base.scss */
+.glider-dot {
+  width: 7px;
+  height: 7px;
+}
+
+/* line 490, src/sass/components/_base.scss */
+.glider-dots {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+/* line 496, src/sass/components/_base.scss */
+.glider-dot.active {
+  background: #F063B8;
+  width: 12px;
+  height: 12px;
+}
+
+/* line 514, src/sass/components/_base.scss */
+.quote p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  margin-left: 0em;
+  /* or 32px */
+  /* 1 */
+  color: #4B5D68;
+}
+
+@media only screen and (min-width: 375px) {
+  /* line 533, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 4em 11px;
+  }
+  /* line 537, src/sass/components/_base.scss */
+  .features-section .features .feature-1 {
+    background-image: url(../01.png);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    padding: 1em;
+    max-width: 24em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  /* line 548, src/sass/components/_base.scss */
+  .features-section .features .feature-2 {
+    background-image: url(../2.png);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    padding: 1em;
+    max-width: 24em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  /* line 559, src/sass/components/_base.scss */
+  .features-section .features .feature-3 {
+    background-image: url(../3.png);
+    background-repeat: no-repeat;
+    background-size: 181%;
+    padding: 1em;
+    max-width: 24em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  /* line 569, src/sass/components/_base.scss */
+  .features-section .features .feature-4 {
+    background-image: url(../4.png);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    padding: 1em;
+    max-width: 24em;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  /* line 581, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 7em 0em;
+  }
+  /* line 585, src/sass/components/_base.scss */
+  .features-section .features .feature-1 .content {
+    margin-left: 0em;
+  }
+  /* line 589, src/sass/components/_base.scss */
+  .features-section .features .feature-2 .content {
+    margin-left: 0em;
+  }
+  /* line 592, src/sass/components/_base.scss */
+  .features-section .features .feature-3 .content {
+    margin-left: 0em;
+  }
+  /* line 596, src/sass/components/_base.scss */
+  .features-section .features .feature-4 .content {
+    margin-left: 0em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* line 603, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 15em 4em;
+    background-size: 117%;
+    background-position: 13em 2em;
+    background-size: 119%;
+  }
+  /* line 616, src/sass/components/_base.scss */
+  .call-to-action .content {
+    width: 55%;
+  }
+  /* line 620, src/sass/components/_base.scss */
+  .features-section .features .feature-1 {
+    padding: 2em;
+  }
+  /* line 623, src/sass/components/_base.scss */
+  .features-section .features .feature-2 {
+    padding: 2em;
+  }
+  /* line 626, src/sass/components/_base.scss */
+  .features-section .features .feature-3 {
+    padding: 2em;
+  }
+  /* line 629, src/sass/components/_base.scss */
+  .features-section .features .feature-4 {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  /* line 635, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 15em 0em;
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  /* line 642, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 15em 0em;
+    background-size: 88%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 651, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 14em 0em;
+    margin-top: 5em;
+  }
+  /* line 656, src/sass/components/_base.scss */
+  .call-to-action-2 {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* line 662, src/sass/components/_base.scss */
+  .call-to-action .content {
+    width: 46%;
+  }
+  /* line 667, src/sass/components/_base.scss */
+  .call-to-action .content h1 {
+    font-size: 3em;
+  }
+  /* line 671, src/sass/components/_base.scss */
+  .features-section p {
+    max-width: 30em;
+    margin: 0 auto;
+  }
+  /* line 676, src/sass/components/_base.scss */
+  .features-section .features .feature-1 {
+    background-size: contain;
+  }
+  /* line 680, src/sass/components/_base.scss */
+  .features-section .features .feature-1 .content {
+    margin-left: 11em !important;
+  }
+  /* line 686, src/sass/components/_base.scss */
+  .features-section .features .feature-2 {
+    background-size: contain;
+  }
+  /* line 690, src/sass/components/_base.scss */
+  .features-section .features .feature-2 .content {
+    margin-left: 11em !important;
+  }
+  /* line 695, src/sass/components/_base.scss */
+  .features-section .features .feature-3 {
+    background-size: contain;
+  }
+  /* line 699, src/sass/components/_base.scss */
+  .features-section .features .feature-3 .content {
+    margin-left: 11em !important;
+  }
+  /* line 704, src/sass/components/_base.scss */
+  .features-section .features .feature-4 {
+    background-size: contain;
+  }
+  /* line 708, src/sass/components/_base.scss */
+  .features-section .features .feature-4 .content {
+    margin-left: 11em !important;
+  }
+  /* line 714, src/sass/components/_base.scss */
+  .testimonials {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  /* line 719, src/sass/components/_base.scss */
+  .quote p {
+    margin-left: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 858px) {
+  /* line 730, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: 19em 1em;
+    background-size: 76%;
+  }
+}
+
+@media only screen and (min-width: 884px) {
+  /* line 738, src/sass/components/_base.scss */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 746, src/sass/components/_base.scss */
+  .header {
+    margin: 4em;
+  }
+  /* line 750, src/sass/components/_base.scss */
+  .header a {
+    font-size: 1.1em;
+  }
+  /* line 755, src/sass/components/_base.scss */
+  .call-to-action .content h1 {
+    font-size: 4em;
+  }
+  /* line 760, src/sass/components/_base.scss */
+  .call-to-action .content p {
+    font-size: 23px;
+  }
+  /* line 764, src/sass/components/_base.scss */
+  .call-to-action button {
+    font-size: 1.5em;
+    width: 11em;
+  }
+  /* line 769, src/sass/components/_base.scss */
+  .call-to-action-2 h1 {
+    font-size: 47px;
+  }
+  /* line 773, src/sass/components/_base.scss */
+  .call-to-action-2 p {
+    font-size: 22px;
+    line-height: 170%;
+  }
+  /* line 779, src/sass/components/_base.scss */
+  .features-section .features .feature-1 {
+    padding: 3em;
+  }
+  /* line 782, src/sass/components/_base.scss */
+  .features-section .features .feature-2 {
+    padding: 3em;
+  }
+  /* line 785, src/sass/components/_base.scss */
+  .features-section .features .feature-3 {
+    padding: 3em;
+  }
+  /* line 788, src/sass/components/_base.scss */
+  .features-section .features .feature-4 {
+    padding: 3em;
+  }
+  /* line 792, src/sass/components/_base.scss */
+  .features-section h1 {
+    font-size: 55px;
+  }
+  /* line 796, src/sass/components/_base.scss */
+  .features-section p {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* line 802, src/sass/components/_base.scss */
+  .call-to-action {
+    background-position: right;
+    background-size: 59%;
+  }
+}
