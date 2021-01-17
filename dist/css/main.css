@@ -1,4 +1,4 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 /**
  * @section Base Styles
  */
@@ -6,6 +6,7 @@
 body {
   margin: 1em  auto;
   max-width: 1024px;
+  font-family: Avenir;
 }
 
 /* line 16, src/sass/components/_base.scss */
@@ -617,12 +618,86 @@ body {
   color: #4B5D68;
 }
 
+/* line 530, src/sass/components/_base.scss */
+.footer {
+  padding: 1em;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 537, src/sass/components/_base.scss */
+.footer-btns {
+  display: grid;
+}
+
+/* line 543, src/sass/components/_base.scss */
+.call-to-action-footer h2 {
+  color: #212353;
+  font-family: Avenir;
+}
+
+/* line 548, src/sass/components/_base.scss */
+.call-to-action-footer p {
+  color: #4B5D68;
+  font-family: Avenir;
+}
+
+/* line 554, src/sass/components/_base.scss */
+.request-demo-btn {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+/* line 563, src/sass/components/_base.scss */
+.request-demo-btn a {
+  margin: 0 auto;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+
+/* line 576, src/sass/components/_base.scss */
+.request-demo-btn img {
+  margin-left: 1em;
+}
+
+/* line 584, src/sass/components/_base.scss */
+.learn-more-btn {
+  background: #F063B8;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
 @media only screen and (min-width: 375px) {
-  /* line 533, src/sass/components/_base.scss */
+  /* line 596, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 4em 11px;
   }
-  /* line 537, src/sass/components/_base.scss */
+  /* line 600, src/sass/components/_base.scss */
   .features-section .features .feature-1 {
     background-image: url(../01.png);
     background-repeat: no-repeat;
@@ -632,7 +707,7 @@ body {
     margin: 0 auto;
     margin-bottom: 2em;
   }
-  /* line 548, src/sass/components/_base.scss */
+  /* line 611, src/sass/components/_base.scss */
   .features-section .features .feature-2 {
     background-image: url(../2.png);
     background-repeat: no-repeat;
@@ -643,7 +718,7 @@ body {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-  /* line 559, src/sass/components/_base.scss */
+  /* line 622, src/sass/components/_base.scss */
   .features-section .features .feature-3 {
     background-image: url(../3.png);
     background-repeat: no-repeat;
@@ -653,7 +728,7 @@ body {
     margin: 0 auto;
     margin-bottom: 2em;
   }
-  /* line 569, src/sass/components/_base.scss */
+  /* line 632, src/sass/components/_base.scss */
   .features-section .features .feature-4 {
     background-image: url(../4.png);
     background-repeat: no-repeat;
@@ -665,67 +740,67 @@ body {
 }
 
 @media only screen and (min-width: 414px) {
-  /* line 581, src/sass/components/_base.scss */
+  /* line 644, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 7em 0em;
   }
-  /* line 585, src/sass/components/_base.scss */
+  /* line 648, src/sass/components/_base.scss */
   .features-section .features .feature-1 .content {
     margin-left: 0em;
   }
-  /* line 589, src/sass/components/_base.scss */
+  /* line 652, src/sass/components/_base.scss */
   .features-section .features .feature-2 .content {
     margin-left: 0em;
   }
-  /* line 592, src/sass/components/_base.scss */
+  /* line 655, src/sass/components/_base.scss */
   .features-section .features .feature-3 .content {
     margin-left: 0em;
   }
-  /* line 596, src/sass/components/_base.scss */
+  /* line 659, src/sass/components/_base.scss */
   .features-section .features .feature-4 .content {
     margin-left: 0em;
   }
 }
 
 @media only screen and (min-width: 500px) {
-  /* line 603, src/sass/components/_base.scss */
+  /* line 666, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 15em 4em;
     background-size: 117%;
     background-position: 13em 2em;
     background-size: 119%;
   }
-  /* line 616, src/sass/components/_base.scss */
+  /* line 679, src/sass/components/_base.scss */
   .call-to-action .content {
     width: 55%;
   }
-  /* line 620, src/sass/components/_base.scss */
+  /* line 683, src/sass/components/_base.scss */
   .features-section .features .feature-1 {
     padding: 2em;
   }
-  /* line 623, src/sass/components/_base.scss */
+  /* line 686, src/sass/components/_base.scss */
   .features-section .features .feature-2 {
     padding: 2em;
   }
-  /* line 626, src/sass/components/_base.scss */
+  /* line 689, src/sass/components/_base.scss */
   .features-section .features .feature-3 {
     padding: 2em;
   }
-  /* line 629, src/sass/components/_base.scss */
+  /* line 692, src/sass/components/_base.scss */
   .features-section .features .feature-4 {
     padding: 2em;
   }
 }
 
 @media only screen and (min-width: 540px) {
-  /* line 635, src/sass/components/_base.scss */
+  /* line 698, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 15em 0em;
   }
 }
 
 @media only screen and (min-width: 590px) {
-  /* line 642, src/sass/components/_base.scss */
+  /* line 705, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 15em 0em;
     background-size: 88%;
@@ -733,75 +808,116 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 651, src/sass/components/_base.scss */
+  /* line 715, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 14em 0em;
     margin-top: 5em;
   }
-  /* line 656, src/sass/components/_base.scss */
+  /* line 720, src/sass/components/_base.scss */
   .call-to-action-2 {
     margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /* line 662, src/sass/components/_base.scss */
+  /* line 726, src/sass/components/_base.scss */
   .call-to-action .content {
     width: 46%;
   }
-  /* line 667, src/sass/components/_base.scss */
+  /* line 731, src/sass/components/_base.scss */
   .call-to-action .content h1 {
     font-size: 3em;
   }
-  /* line 671, src/sass/components/_base.scss */
+  /* line 735, src/sass/components/_base.scss */
   .features-section p {
     max-width: 30em;
     margin: 0 auto;
   }
-  /* line 676, src/sass/components/_base.scss */
+  /* line 740, src/sass/components/_base.scss */
   .features-section .features .feature-1 {
     background-size: contain;
   }
-  /* line 680, src/sass/components/_base.scss */
+  /* line 744, src/sass/components/_base.scss */
   .features-section .features .feature-1 .content {
     margin-left: 11em !important;
   }
-  /* line 686, src/sass/components/_base.scss */
+  /* line 750, src/sass/components/_base.scss */
   .features-section .features .feature-2 {
     background-size: contain;
   }
-  /* line 690, src/sass/components/_base.scss */
+  /* line 754, src/sass/components/_base.scss */
   .features-section .features .feature-2 .content {
     margin-left: 11em !important;
   }
-  /* line 695, src/sass/components/_base.scss */
+  /* line 759, src/sass/components/_base.scss */
   .features-section .features .feature-3 {
     background-size: contain;
   }
-  /* line 699, src/sass/components/_base.scss */
+  /* line 763, src/sass/components/_base.scss */
   .features-section .features .feature-3 .content {
     margin-left: 11em !important;
   }
-  /* line 704, src/sass/components/_base.scss */
+  /* line 768, src/sass/components/_base.scss */
   .features-section .features .feature-4 {
     background-size: contain;
   }
-  /* line 708, src/sass/components/_base.scss */
+  /* line 772, src/sass/components/_base.scss */
   .features-section .features .feature-4 .content {
     margin-left: 11em !important;
   }
-  /* line 714, src/sass/components/_base.scss */
+  /* line 778, src/sass/components/_base.scss */
   .testimonials {
     padding-left: 3em;
     padding-right: 3em;
   }
-  /* line 719, src/sass/components/_base.scss */
+  /* line 783, src/sass/components/_base.scss */
   .quote p {
     margin-left: 4.5em;
+  }
+  /* line 787, src/sass/components/_base.scss */
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 790, src/sass/components/_base.scss */
+  .footer-btns {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  /* line 794, src/sass/components/_base.scss */
+  .request-demo-btn {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    padding: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 802, src/sass/components/_base.scss */
+  .request-demo-btn a {
+    margin: 0 auto;
+    padding: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+  }
+  /* line 815, src/sass/components/_base.scss */
+  .request-demo-btn img {
+    margin-left: 1em;
   }
 }
 
 @media only screen and (min-width: 858px) {
-  /* line 730, src/sass/components/_base.scss */
+  /* line 826, src/sass/components/_base.scss */
   .call-to-action {
     background-position: 19em 1em;
     background-size: 76%;
@@ -809,7 +925,7 @@ body {
 }
 
 @media only screen and (min-width: 884px) {
-  /* line 738, src/sass/components/_base.scss */
+  /* line 834, src/sass/components/_base.scss */
   .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -817,64 +933,64 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 746, src/sass/components/_base.scss */
+  /* line 842, src/sass/components/_base.scss */
   .header {
     margin: 4em;
   }
-  /* line 750, src/sass/components/_base.scss */
+  /* line 846, src/sass/components/_base.scss */
   .header a {
     font-size: 1.1em;
   }
-  /* line 755, src/sass/components/_base.scss */
+  /* line 851, src/sass/components/_base.scss */
   .call-to-action .content h1 {
     font-size: 4em;
   }
-  /* line 760, src/sass/components/_base.scss */
+  /* line 856, src/sass/components/_base.scss */
   .call-to-action .content p {
     font-size: 23px;
   }
-  /* line 764, src/sass/components/_base.scss */
+  /* line 860, src/sass/components/_base.scss */
   .call-to-action button {
     font-size: 1.5em;
     width: 11em;
   }
-  /* line 769, src/sass/components/_base.scss */
+  /* line 865, src/sass/components/_base.scss */
   .call-to-action-2 h1 {
     font-size: 47px;
   }
-  /* line 773, src/sass/components/_base.scss */
+  /* line 869, src/sass/components/_base.scss */
   .call-to-action-2 p {
     font-size: 22px;
     line-height: 170%;
   }
-  /* line 779, src/sass/components/_base.scss */
+  /* line 875, src/sass/components/_base.scss */
   .features-section .features .feature-1 {
     padding: 3em;
   }
-  /* line 782, src/sass/components/_base.scss */
+  /* line 878, src/sass/components/_base.scss */
   .features-section .features .feature-2 {
     padding: 3em;
   }
-  /* line 785, src/sass/components/_base.scss */
+  /* line 881, src/sass/components/_base.scss */
   .features-section .features .feature-3 {
     padding: 3em;
   }
-  /* line 788, src/sass/components/_base.scss */
+  /* line 884, src/sass/components/_base.scss */
   .features-section .features .feature-4 {
     padding: 3em;
   }
-  /* line 792, src/sass/components/_base.scss */
+  /* line 888, src/sass/components/_base.scss */
   .features-section h1 {
     font-size: 55px;
   }
-  /* line 796, src/sass/components/_base.scss */
+  /* line 892, src/sass/components/_base.scss */
   .features-section p {
     font-size: 1.5em;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  /* line 802, src/sass/components/_base.scss */
+  /* line 898, src/sass/components/_base.scss */
   .call-to-action {
     background-position: right;
     background-size: 59%;

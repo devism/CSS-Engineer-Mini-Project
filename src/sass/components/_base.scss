@@ -9,7 +9,7 @@ body {
 	// margin: 0;
 	margin: 1em  auto; 
     max-width: 1024px;
-
+	font-family: Avenir;
 
 }
 
@@ -527,6 +527,69 @@ line-height: 160%;
 	color: #4B5D68;
 }
 
+.footer{
+	padding:1em;
+	display: block;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-around;
+}
+.footer-btns{
+	display: grid;
+}
+
+.call-to-action-footer{
+	
+	h2{
+		color:#212353;
+		font-family: Avenir;
+	}
+
+	p{
+		color: #4B5D68;
+		font-family: Avenir;
+	}
+}
+
+.request-demo-btn{
+	background: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+	padding: 0.5em;
+	display: flex;
+	margin-bottom: 0.5em;
+	
+	a{
+	margin: 0 auto;
+	padding: 0.5em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+	}
+	img{
+		margin-left:1em;
+	}
+}
+
+
+
+
+.learn-more-btn{
+	background: #F063B8;
+	border-radius: 50px;
+	color:white;
+	border:none;
+	padding:1em;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+}
 
 // ---------- media queries ---------
 @media only screen and (min-width: 375px) {
@@ -648,6 +711,7 @@ line-height: 160%;
   
   @media only screen and (min-width:768px){
 
+
 		.call-to-action {
 			background-position: 14em 0em;
 			margin-top: 5em;
@@ -720,7 +784,39 @@ line-height: 160%;
 		margin-left: 4.5em;
 	  }
 
-	  
+	  .footer{
+		display: flex;
+	  }
+	  .footer-btns{
+		display: inline-flex;
+		}
+
+		.request-demo-btn{
+			background: #FFFFFF;
+			-webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+			box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+			border-radius: 50px;
+			padding: 0.5em;
+			display: flex;
+			
+			a{
+			margin: 0 auto;
+			padding: 0.5em;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			font-family: Avenir;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 160%;
+			color: #4B5D68;
+			}
+			img{
+				margin-left:1em;
+			}
+		}
+	
 
 
 	  
