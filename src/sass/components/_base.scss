@@ -412,6 +412,7 @@ line-height: 160%;
     border-radius: 20px;
     padding-left: 1em;
 	padding-right: 1em;
+	margin-bottom: 5em;
 	h2{
 		font-family: Helvetica;
 		font-style: normal;
@@ -528,11 +529,13 @@ line-height: 160%;
 }
 
 .footer{
+	
 	padding:1em;
 	display: block;
     align-items: center;
     align-content: space-between;
-    justify-content: space-around;
+	justify-content: space-around;
+	border-top:1px solid #9C69E2;
 }
 .footer-btns{
 	display: grid;
@@ -590,6 +593,38 @@ line-height: 160%;
 	margin-bottom: 0.5em;
 	margin-right: 0.5em;
 }
+
+.sitemap{
+	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 25% auto;
+	margin:1em;
+	
+	h2{
+		color:#212353;
+	}
+	
+	h3{
+		color:#212353;
+	}
+
+	p{
+		color:#212353;
+	}
+
+	a{
+		color:#212353;
+		margin-right: 0.5em;
+		
+	}
+
+	img{
+		width:50px;
+	}
+}
+
+
+
 
 // ---------- media queries ---------
 @media only screen and (min-width: 375px) {
@@ -711,6 +746,13 @@ line-height: 160%;
   
   @media only screen and (min-width:768px){
 
+		.sitemap{
+			display:grid;
+			grid-template-columns: 2fr 1fr 1fr 1fr;
+			a{
+				display:block;
+			}
+		}
 
 		.call-to-action {
 			background-position: 14em 0em;
@@ -778,6 +820,7 @@ line-height: 160%;
 	  .testimonials{
 		padding-left: 3em;
 		padding-right: 3em;
+		
 	  }
 
 	  .quote p{
